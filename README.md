@@ -38,15 +38,15 @@ BAR-SQL consists of three core components:
 ### Training Pipeline Overview
 
 <div align="center">
-  <img src="assets/ModelTrain.png" alt="BAR-SQL Training Pipeline" width="70%">
+  <img src="assets/ModelTrain.png" alt="BAR-SQL Training Pipeline" width="550%">
   <p><i>Figure 1: Overview of the BAR-SQL training pipeline. The framework consists of three stages: cold-start SFT with unified CoT format, TCHR reward function design (integrating Format, Grammar, Accuracy, and Length components), and GRPO-based policy optimization.</i></p>
 </div>
 
 ### Reward Function Design Overview
-<div align="center"> <img src="assets/RewardFunction.png" alt="BAR-SQL Reward Function Structure" width="100%"> <p><i>Figure 2: Overview of BAR-SQL reward function structure.</i></p> </div>
+<div align="center"> <img src="assets/RewardFunction.png" alt="BAR-SQL Reward Function Structure" width="95%"> <p><i>Figure 2: Overview of BAR-SQL reward function structure.</i></p> </div>
 
 ### Application in enterprise BI environment
-<div align="center"> <img src="assets/Application.png" alt="BAR-SQL Reward Function Structure" width="100%"> <p><i>Figure 3: The system comprises a query-type
+<div align="center"> <img src="assets/Application.png" alt="BAR-SQL Reward Function Structure" width="95%"> <p><i>Figure 3: The system comprises a query-type
 classifier, knowledge retrieval module, and generation engine with optional reflection loop. This decoupled design enables
 flexible maintenance and extension of business logic without model retraining..</i></p> </div>
 
@@ -239,18 +239,9 @@ python main_eval.py \
 
 Performance comparison across SQL generation tasks and boundary interaction tasks on **Ent-SQL-Bench** (1,218 test instances):
 
-| Model | Dim. Deg. | Reflection | Std. SQL | Multi-Step | Ambiguity | Dim. Rej. | Metric Rej. | Follow-Up | **Avg.** |
-|-------|-----------|------------|----------|------------|-----------|-----------|-------------|-----------|----------|
-| **General-Purpose Baselines** | | | | | | | | | |
-| Claude-4.5-Sonnet | 44.07% | 69.79% | 60.56% | 69.72% | 16.13% | 18.64% | 87.50% | 17.75% | 48.02% |
-| Gemini3-Pro | 49.15% | 64.52% | 52.69% | 62.50% | 0.00% | 0.00% | 10.34% | 0.00% | 29.90% |
-| GPT-4o | 40.68% | 28.13% | 22.54% | 17.96% | 2.15% | 0.00% | 34.38% | 2.90% | 18.59% |
-| GPT-5 | 35.59% | 80.21% | 46.48% | 67.61% | 5.56% | 13.79% | 70.49% | 48.24% | 46.01% |
-| DeepSeek-V3.2 | 42.37% | 82.29% | 47.89% | 41.90% | 0.00% | 1.69% | 17.19% | 0.00% | 29.17% |
-| **Ours** | | | | | | | | | |
-| Qwen3-1.7B (Base) | 10.17% | 38.54% | 14.08% | 4.93% | 0.00% | 0.00% | 0.00% | 0.00% | 8.47% |
-| Qwen3-1.7B (SFT) | 77.97% | 83.33% | 62.32% | 63.73% | 68.75% | 42.37% | 86.12% | 55.80% | 67.55% |
-| **BAR-SQL (Ours)** | **93.22%** | **93.75%** | **90.75%** | **81.69%** | **94.51%** | **93.31%** | **92.27%** | **92.36%** | **91.48%** |
+<div align="center">
+  <img src="assets/Results.jpg" alt="BAR-SQL Training Pipeline" width="95%">
+</div>
 
 **Task Abbreviations**:
 - **Dim. Deg.**: Degenerate Dimension (denormalized schemas)

@@ -283,7 +283,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Base Model**: [Qwen3 by Alibaba Cloud](https://github.com/QwenLM/Qwen3)
 - **Training Framework**: [ms-swift by ModelScope](https://github.com/modelscope/swift)
-- **Inspiration**: Spider 2.0, BIRD, DeepSeek-R1 for reasoning paradigms
+- **Inspiration**: DeepSeek-R1 for reasoning paradigms
 
 ---
 

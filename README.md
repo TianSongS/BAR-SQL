@@ -38,7 +38,7 @@ BAR-SQL consists of three core components:
 ### Training Pipeline Overview
 
 <div align="center">
-  <img src="assets/ModelTrain.png" alt="BAR-SQL Training Pipeline" width="550%">
+  <img src="assets/ModelTrain.png" alt="BAR-SQL Training Pipeline" width="50%">
   <p><i>Figure 1: Overview of the BAR-SQL training pipeline. The framework consists of three stages: cold-start SFT with unified CoT format, TCHR reward function design (integrating Format, Grammar, Accuracy, and Length components), and GRPO-based policy optimization.</i></p>
 </div>
 

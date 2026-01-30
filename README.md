@@ -38,9 +38,17 @@ BAR-SQL consists of three core components:
 ### Training Pipeline Overview
 
 <div align="center">
-  <img src="assets/ModelTrain.pdf" alt="BAR-SQL Training Pipeline" width="100%">
+  <img src="assets/ModelTrain.png" alt="BAR-SQL Training Pipeline" width="70%">
   <p><i>Figure 1: Overview of the BAR-SQL training pipeline. The framework consists of three stages: cold-start SFT with unified CoT format, TCHR reward function design (integrating Format, Grammar, Accuracy, and Length components), and GRPO-based policy optimization.</i></p>
 </div>
+
+### Reward Function Design Overview
+<div align="center"> <img src="assets/RewardFunction.png" alt="BAR-SQL Reward Function Structure" width="100%"> <p><i>Figure 2: Overview of BAR-SQL reward function structure.</i></p> </div>
+
+### Application in enterprise BI environment
+<div align="center"> <img src="assets/Application.png" alt="BAR-SQL Reward Function Structure" width="100%"> <p><i>Figure 3: The system comprises a query-type
+classifier, knowledge retrieval module, and generation engine with optional reflection loop. This decoupled design enables
+flexible maintenance and extension of business logic without model retraining..</i></p> </div>
 
 ### Supported Task Types (8 Categories)
 

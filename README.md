@@ -129,6 +129,8 @@ BAR-SQL/
 │   ├── RewardFunction.pdf       # TCHR reward function design
 │   └── seedGeneration.pdf       # Seed-Mutation data synthesis workflow
 │
+│── prompts.pdf                  # Prompts for data synthesis and inference
+│
 └── README.md
 ```
 
